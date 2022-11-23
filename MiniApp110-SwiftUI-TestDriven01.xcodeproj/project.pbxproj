@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		87AE915D292DD7DC00164209 /* MiniApp110_SwiftUI_TestDriven01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE915C292DD7DC00164209 /* MiniApp110_SwiftUI_TestDriven01App.swift */; };
-		87AE915F292DD7DC00164209 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE915E292DD7DC00164209 /* ContentView.swift */; };
+		87AE915F292DD7DC00164209 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE915E292DD7DC00164209 /* ArticleListView.swift */; };
 		87AE9161292DD7DD00164209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AE9160292DD7DD00164209 /* Assets.xcassets */; };
 		87AE9164292DD7DD00164209 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AE9163292DD7DD00164209 /* Preview Assets.xcassets */; };
 		87AE916E292DD7DD00164209 /* MiniApp110_SwiftUI_TestDriven01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE916D292DD7DD00164209 /* MiniApp110_SwiftUI_TestDriven01Tests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		87AE9159292DD7DC00164209 /* MiniApp110-SwiftUI-TestDriven01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniApp110-SwiftUI-TestDriven01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AE915C292DD7DC00164209 /* MiniApp110_SwiftUI_TestDriven01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp110_SwiftUI_TestDriven01App.swift; sourceTree = "<group>"; };
-		87AE915E292DD7DC00164209 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		87AE915E292DD7DC00164209 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		87AE9160292DD7DD00164209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87AE9163292DD7DD00164209 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87AE9169292DD7DD00164209 /* MiniApp110-SwiftUI-TestDriven01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MiniApp110-SwiftUI-TestDriven01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				87AE915C292DD7DC00164209 /* MiniApp110_SwiftUI_TestDriven01App.swift */,
-				87AE915E292DD7DC00164209 /* ContentView.swift */,
+				87AE915E292DD7DC00164209 /* ArticleListView.swift */,
 				87AE9160292DD7DD00164209 /* Assets.xcassets */,
 				87AE9162292DD7DD00164209 /* Preview Content */,
 			);
@@ -143,6 +143,8 @@
 			dependencies = (
 			);
 			name = "MiniApp110-SwiftUI-TestDriven01";
+			packageProductDependencies = (
+			);
 			productName = "MiniApp110-SwiftUI-TestDriven01";
 			productReference = 87AE9159292DD7DC00164209 /* MiniApp110-SwiftUI-TestDriven01.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +160,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				87AE9190292DDB5D00164209 /* PBXTargetDependency */,
 				87AE916B292DD7DD00164209 /* PBXTargetDependency */,
 			);
 			name = "MiniApp110-SwiftUI-TestDriven01Tests";
@@ -176,6 +179,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				87AE9192292DDB6300164209 /* PBXTargetDependency */,
 				87AE9175292DD7DD00164209 /* PBXTargetDependency */,
 			);
 			name = "MiniApp110-SwiftUI-TestDriven01UITests";
@@ -190,6 +194,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
@@ -215,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 87AE9150292DD7DC00164209;
+			packageReferences = (
+				87AE918C292DDB3B00164209 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 87AE915A292DD7DC00164209 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87AE915F292DD7DC00164209 /* ContentView.swift in Sources */,
+				87AE915F292DD7DC00164209 /* ArticleListView.swift in Sources */,
 				87AE915D292DD7DC00164209 /* MiniApp110_SwiftUI_TestDriven01App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +301,14 @@
 			isa = PBXTargetDependency;
 			target = 87AE9158292DD7DC00164209 /* MiniApp110-SwiftUI-TestDriven01 */;
 			targetProxy = 87AE9174292DD7DD00164209 /* PBXContainerItemProxy */;
+		};
+		87AE9190292DDB5D00164209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 87AE918F292DDB5D00164209 /* ViewInspector */;
+		};
+		87AE9192292DDB6300164209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 87AE9191292DDB6300164209 /* ViewInspector */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,6 +437,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MiniApp110-SwiftUI-TestDriven01/Preview Content\"";
 				DEVELOPMENT_TEAM = 558ZJSQN67;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -448,6 +467,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MiniApp110-SwiftUI-TestDriven01/Preview Content\"";
 				DEVELOPMENT_TEAM = 558ZJSQN67;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -583,6 +603,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87AE918C292DDB3B00164209 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87AE918F292DDB5D00164209 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87AE918C292DDB3B00164209 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+		87AE9191292DDB6300164209 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87AE918C292DDB3B00164209 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87AE9151292DD7DC00164209 /* Project object */;
 }
